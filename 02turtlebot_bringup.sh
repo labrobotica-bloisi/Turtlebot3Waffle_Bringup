@@ -14,10 +14,10 @@ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 
 # Send to joule
 echo "Sending configuration file..."
-scp turtlebot_start.sh ${USERNAME}@${JOULE_IP}:/home/${USERNAME}/
+scp turtlebot_start.sh ${JOULE_USERNAME}@${JOULE_IP}:/home/${JOULE_USERNAME}/
 rm turtlebot_start.sh
 
 # Execute script
 echo "Starting ros on turtlebot"
-ssh ${USERNAME}@${JOULE_IP} "bash -c 'chmod +x turtlebot_start.sh; ./turtlebot_start.sh'"
+ssh ${JOULE_USERNAME}@${JOULE_IP} "bash -c 'chmod +x turtlebot_start.sh; ./turtlebot_start.sh'"
 

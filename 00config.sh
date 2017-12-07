@@ -7,8 +7,9 @@ export LOCAL_IP="192.168.43.145"
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
-# Write here ubuntu joule username (password -> paolo1)
-export USERNAME="paolo"
+# Write here ubuntu joule username
+export JOULE_USERNAME="paolo"
+export JOULE_PASSWORD="paolo1"
 # ------------------------------------------------------------------------------
 
 export TURTLEBOT3_MODEL=waffle
