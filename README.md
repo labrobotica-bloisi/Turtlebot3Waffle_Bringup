@@ -6,10 +6,10 @@ This folders contains useful scripts to bring up turtlebot3 waffle.
 * A wireless network
 * A turtlebot configured as described [Here](http://webcache.googleusercontent.com/search?q=cache:https://turtlebot3.readthedocs.io/en/latest/sbc_software.html)
 * Ubuntu on intel joule must connect automatically to the wireless network and get always the always the same ip address (dhcp or static)
--1. Boot the joule with a monitor connected
--2. Use network manager and connect to the wireless network setting a static ip
--3. Reboot with monitor and check if the board connects automatically
--4. Turn off and disconnect monitor
+    1. Boot the joule with a monitor connected
+    2. Use network manager and connect to the wireless network setting a static ip
+    3. Reboot with monitor and check if the board connects automatically
+    4. Turn off and disconnect monitor
 
 ## Usage
 1. Connect host pc to the same wireless network of the turtlebot
