@@ -30,10 +30,10 @@ Now turtlebot is ready and working (lidar sensor, if connected should start rota
 
 ## Teleoperation
 Many teleoperation methods are available:
-* keyboard teleoperation is available by running 03keyboard_teleop.sh
-* joypad teleoperation is available by running 03joysyick_teleop.sh with the joypad connected
+* keyboard teleoperation is available by running 03hostpc_keyboard_teleop.sh
+* joypad teleoperation is available by running 03hostpc_joysyick_teleop.sh with the joypad connected
 * android phone teleoperation with app [TeleOP](https://play.google.com/store/apps/details?id=com.github.rosjava.android_apps.teleop.indigo)
-* other methods as described [Here](http://webcache.googleusercontent.com/search?q=cache:https://turtlebot3.readthedocs.io/en/latest/teleoperation.html)
+* other methods as described [here](http://emanual.robotis.com/docs/en/platform/turtlebot3/teleoperation/)
 
 ## SLAM
 With the system running, it is possible to run SLAM node to create map.
@@ -44,7 +44,7 @@ To see the built map real-time, launch 06hostpc_show_slam.sh with slam running.
 ## Shutdown system
 To poweroff turtlebot, close the scripts with CTRL+C in inverse order.
 Before shutting down it is important to poweroff the joule operating system.
-Execute script 99_turtlebot_poweroff.sh and wait ~30secs before removing power!
+Execute script 99turtlebot_poweroff.sh and wait ~30secs before removing power!
 
 ## Future works?
 * Navigation
