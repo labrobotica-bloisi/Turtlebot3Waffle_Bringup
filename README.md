@@ -5,11 +5,19 @@ This folders contains useful scripts to bring up turtlebot3 waffle.
 ## Requirements
 * A wireless network
 * A turtlebot configured as described [Here](http://webcache.googleusercontent.com/search?q=cache:https://turtlebot3.readthedocs.io/en/latest/sbc_software.html)
-* Ubuntu on intel joule must connect automatically to the wireless network and get always the always the same ip address (dhcp or static)
+* Ubuntu on intel joule must connect automatically to a wireless network and get always the always the same ip address (dhcp or static)
     1. Boot the joule with a monitor connected
-    2. Use network manager and connect to the wireless network setting a static ip
-    3. Reboot with monitor and check if the board connects automatically
+    2. Use network manager and connect to the wireless network (setting a static ip optionally)
+    3. Reboot with monitor and check if the board connects automatically (optional)
     4. Turn off and disconnect monitor
+
+## Dynamic IP
+If using dynamic IP address (like us in our network) there is a simple way to get joule's ip address without a monitor:
+1. with joule turned on connect the host pc to the board with a micro-usb cable
+2. use a serial terminal like picocom (or putty on windows) to open the serial port and communicate to the joule with the command picocom /dev/ttyUSB0 -b115200
+3. log in to the joule from the serial, writing username and password
+4. use ifconfig command to get joule ip
+5. disconnect the micro usb cable from the joule
 
 ## Usage
 1. Connect host pc to the same wireless network of the turtlebot
