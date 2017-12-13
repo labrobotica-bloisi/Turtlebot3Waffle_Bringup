@@ -40,4 +40,5 @@ Execute script 99_turtlebot_poweroff.sh and wait ~30secs before removing power!
 
 ## Future works?
 * Navigation
+* Realsense
 

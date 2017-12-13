@@ -2,22 +2,9 @@
 
 source ./00config.sh
 
-# Create ros script
-echo -e "
-#!/bin/bash
-export ROS_HOSTNAME=${JOULE_IP}
-export ROS_MASTER_URI=\"http://${LOCAL_IP}:11311\"
+./00sendconfiguration.sh
 
-source catkin_ws/devel/setup.bash
-roslaunch turtlebot3_bringup turtlebot3_robot.launch
-" > turtlebot_start.sh
-
-# Send to joule
-echo "Sending configuration file..."
-scp turtlebot_start.sh ${JOULE_USERNAME}@${JOULE_IP}:/home/${JOULE_USERNAME}/
-rm turtlebot_start.sh
-
-# Execute script
+# Execute node
 echo "Starting ros on turtlebot"
-ssh ${JOULE_USERNAME}@${JOULE_IP} "bash -c 'chmod +x turtlebot_start.sh; ./turtlebot_start.sh'"
+ssh ${JOULE_USERNAME}@${JOULE_IP} "bash -c 'chmod +x joule_config.sh; source ./joule_config.sh; roslaunch turtlebot3_bringup turtlebot3_robot.launch'"
 
