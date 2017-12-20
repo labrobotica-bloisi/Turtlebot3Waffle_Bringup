@@ -4,7 +4,7 @@ This folders contains useful scripts to bring up turtlebot3 waffle.
 
 ## Requirements
 * A wireless network
-* A turtlebot configured as described [Here](http://webcache.googleusercontent.com/search?q=cache:https://turtlebot3.readthedocs.io/en/latest/sbc_software.html)
+* A turtlebot configured as described [Here](http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_software_setup/)
 * Ubuntu on intel joule must connect automatically to a wireless network and get always the always the same ip address (dhcp or static)
     1. Boot the joule with a monitor connected
     2. Use network manager and connect to the wireless network (setting a static ip optionally)
