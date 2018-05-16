@@ -1,3 +1,4 @@
+#!/bin/bash
 source ./00config.sh
 
 echo "Starting SLAM rviz node..."
