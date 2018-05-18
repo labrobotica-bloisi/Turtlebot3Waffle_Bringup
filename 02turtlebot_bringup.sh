@@ -6,5 +6,4 @@ source ./00config.sh
 
 # Execute node
 echo "Starting ros on turtlebot"
-ssh ${JOULE_USERNAME}@${JOULE_IP} "bash -c 'chmod +x joule_config.sh; source ./joule_config.sh; roslaunch turtlebot3_bringup turtlebot3_robot.launch'"
-
+ssh "${JOULE_USERNAME}"@"${JOULE_IP}" "bash -c 'chmod +x joule_config.sh; source ./joule_config.sh; roslaunch turtlebot3_bringup turtlebot3_robot.launch'"
