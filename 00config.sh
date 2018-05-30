@@ -15,3 +15,4 @@ export JOULE_PASSWORD="condor"
 export TURTLEBOT3_MODEL=waffle
 export ROS_HOSTNAME="${LOCAL_IP}"
 export ROS_MASTER_URI=http://"${LOCAL_IP}":11311
+
