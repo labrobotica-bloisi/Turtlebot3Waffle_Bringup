@@ -1,6 +1,23 @@
+
+<!-- Updated by Vladislav Bragoi -->
 # Turtlebot3 Tools
 
 This folders contains useful scripts to bring up turtlebot3 waffle.
+
+
+## UPDATE
+Panorama works only if raspicam package is installed. Click [here](http://emanual.robotis.com/docs/en/platform/turtlebot3/applications/#turtlebot-panorama-demo-using-raspberry-pi-camera-module) to see how to configure and/or install it. 
+[Needs to be tested on turtlebot3]
+
+### New files:
+* 08hostpc_navigation_map.sh
+* 09hostpc_rviz_navigation_map.sh
+* 10hostpc_save_map.sh
+* 11turtlebot_bringup_picamera.sh
+* 12hostpc_panorama.sh
+* 13hostpc_start_panorama_demo.sh
+* 14hostpc_view_image.sh
+
 
 ## Requirements
 * A wireless network
@@ -45,8 +62,4 @@ To see the built map real-time, launch 06hostpc_show_slam.sh with slam running.
 To poweroff turtlebot, close the scripts with CTRL+C in inverse order.
 Before shutting down it is important to poweroff the joule operating system.
 Execute script 99turtlebot_poweroff.sh and wait ~30secs before removing power!
-
-## Future works?
-* Navigation
-* Realsense
 
