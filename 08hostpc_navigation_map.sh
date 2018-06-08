@@ -7,7 +7,8 @@ if [ $# -ne 1 ] || [ ! -f $1 ]; then
 fi
 MAP=$1
 
-echo "Starting navigation in map inserted..."
+echo "Starting navigation in map:"
+echo $MAP
 
 source ./00config.sh
 source $HOME/catkin_ws/devel/setup.bash
