@@ -63,7 +63,3 @@ To poweroff turtlebot, close the scripts with CTRL+C in inverse order.
 Before shutting down it is important to poweroff the joule operating system.
 Execute script 99turtlebot_poweroff.sh and wait ~30secs before removing power!
 
-## Future works?
-* Navigation
-* Realsense
-

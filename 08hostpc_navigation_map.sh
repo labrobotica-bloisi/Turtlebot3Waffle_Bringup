@@ -11,5 +11,5 @@ echo "Starting navigation in map inserted..."
 
 source ./00config.sh
 source $HOME/catkin_ws/devel/setup.bash
-
+export TURTLEBOT3_MODEL=waffle
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$MAP
