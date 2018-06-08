@@ -3,15 +3,15 @@
 # ------------------------------------------------------------------------------
 # Write here local pc ip address and intel joule ip address.
 
-export JOULE_IP="157.27.142.168"
+export JOULE_IP="157.27.133.207"
 export LOCAL_IP="157.27.184.94"
 
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
 # Write here ubuntu joule username
-export JOULE_USERNAME="maestro"
-export JOULE_PASSWORD="maestro"
+export JOULE_USERNAME="condor"
+export JOULE_PASSWORD="condor"
 # ------------------------------------------------------------------------------
 
 export TURTLEBOT3_MODEL=waffle
